@@ -1,4 +1,853 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Scriptor]]></title><description><![CDATA[A Blog]]></description><link>https://scriptor.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 08 Jun 2018 09:22:31 GMT</lastBuildDate><item><title><![CDATA[Gérer un projet avec la méthodologie en cascade]]></title><description><![CDATA[If you fail to plan, you are planning to fail
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Scriptor]]></title><description><![CDATA[A Blog]]></description><link>https://scriptor.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 19 Jun 2018 13:01:43 GMT</lastBuildDate><item><title><![CDATA[Comment créer un site web (ou un blog)]]></title><description><![CDATA[Vous voulez créer un site web mais craignez que ce ne soit trop difficle, long, ou cher ? Pourtant aujourd’hui, créer un site web…]]></description><link>https://scriptor.io/creer-un-site/</link><guid isPermaLink="false">https://scriptor.io/creer-un-site/</guid><pubDate>Sun, 10 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;!-- 
+TODO:
+[ ] Add share buttons
+
+Guide ultime: Comment créer un site web (où un blog)
+Guide ultime: Comment créer un site web (pas à pas)
+
+Mots clés:
+
+10 k – 100 k
+créer un blog
+
+1 k – 10 k
+créer un site gratuit 
+créer un site web gratuit
+créer site internet gratuit
+site internet pas cher
+créer un blog gratuit
+créer son blog
+hebergement site web
+
+100 – 1 k
+créer un site internet facilement
+créer un site avec wordpress
+
+--&gt;
+&lt;p&gt;Vous voulez créer un site web mais craignez que ce ne soit trop difficle, long, ou cher ?&lt;/p&gt;
+&lt;p&gt;Pourtant aujourd’hui, créer un site web professionnel ne requiert pas de compétences particulières ni de beaucoup de temps, si ce n’est trente minutes de concentration. &lt;/p&gt;
+&lt;p&gt;Quant au prix, il y en a pour tous les budgets. De 0€ à 4€/mois.&lt;/p&gt;
+&lt;p&gt;Dans cet article, je vais vous montrer trois aproches pour créer un site web:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#wordpress&quot;&gt;&lt;strong&gt;Créer un site professionnel avec WordPress&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+Pour avoir un site robuste, simple et rapide à mettre en place, intuitif et personalisable sans jamais avoir à toucher une ligne de code, il faut créer son site avec WordPress.&lt;br&gt;
+L’avantage de cette méthode est qu’elle est très rapide et simple à mettre en place.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ghpages&quot;&gt;&lt;strong&gt;Créer un site ou un blog avec Github Pages&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+L’avantage de cette méthode, c’est qu’elle est gratuite. Vous n’aurez à payer que le nom de domaine si vous en voulez un.&lt;br&gt;
+En échange, il faudrat plus de temps et être familiarisé avec Git, Github et la syntaxe Mardown.&lt;br&gt;
+Si vous désirez personnaliser le thème choisi, il faudra mettre la main au code. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#netlify&quot;&gt;&lt;strong&gt;Créer un site avec Netlify&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+Cette option est faite principalement pour les développeurs ou pour ceux qui peuvent embaucher un développeur.
+Elle à tous les avantages. D’un côté la gratuité et performance des sites statiques, d’un autre, la puissance d’un CMS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Je crée votre site Netlify pour vous.&lt;br&gt;
+&lt;a href=&quot;mailto:thescriptor@protonmail.com&quot;&gt;Contactez-moi&lt;/a&gt;   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Créer un site web est donc un compromis.&lt;br&gt;
+Choisissez entre ces trois approches en fonction de vos besoins, budget et domaine de compétences.&lt;/p&gt;
+&lt;!-- Il n’y a pas **une** manière de créer un site web ou de créer un blog,  
+Aujourd’hui, il en existe plus que jamais, et chaque mois, de nouvelles technologies apparaissent. Permettant de créer un site plus performant, créer un site plus facilement ou de créer son site gratuitement. Toutes les dernières méthodes son détaillées ici, ainsi que les méthodes plus anciennes mais toujours aussi intéressantes.
+
+Le choix de la méthode est un compromis.
+
+Si vous voulez juste créer un site web, avec une méthode fiable, populaire et sans prises de tête, rendez-vous directement à la section [Créer un site avec WordPress](#wordpress). Si vous êtes plus aventurier, débrouillard ou à l&apos;aise avec le web, que vous avez besoin d&apos;un site ultra rapide ou que vous avez un budget serré, [cliquez ici](#statique) pour découvrir comment créer un site très performant avec les fameux générateurs de sites statiques. --&gt;
+&lt;!-- 
+###### Pour créer un site internet, il faut:
+1. Une idée de nom de domaine
+2. La technologie adaptée  
+3. Un hébergeur adéquat --&gt;
+&lt;!-- ###### Dans cet article, nous allons couvrir:
+1. Comment **créer un site** ou un **blog** avec WordPress
+	- **Créer et héberger** un site web WordPress sur **Bluehost** ou **OVH**
+	- Comment **Installer un thème** sur wordpress
+	- Comment **Installer Google Analytics sur WordPress**
+	- Les **plugins wordpress indispensables**
+2. Comment **créer un site web gratuit** et performant avec [Jekyll](), [Hexo](), [Gatsby]() ou [Hugo]()
+	- Comment acheter un nom de domaine (optionnel)
+	- Comment **créer un site web gratuit** avec **Netlify**
+	- Comment **créer un site web gratuit** avec **Github Pages**
+	- Metttre en place HTTPS sur Github Pages avec CloudFlare --&gt;
+&lt;h1 id=&quot;wordpress&quot;&gt; Créer un site avec WordPress &lt;/h1&gt;
+&lt;p&gt;Il existe deux versions de wordpress. Une version gratuite et open source et une &lt;a href=&quot;/out/wordpress&quot;&gt;version commerciale&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Je détaille ici les étapes pour une installation de la version gratuite et open source. Elle est plus longue, mais en échange, elle offre une totale liberté et contrôle sur vos données. Néanmoins, si vous souhaitez utiliser la &lt;a href=&quot;/out/wordpress&quot;&gt;version commerciale&lt;/a&gt; de wordpress pour gagner du temps, &lt;a href=&quot;/out/wordpress&quot;&gt;cliquez ici&lt;/a&gt; et suivez les instructions. C’est aussi simple que de créer un compte facebook. &lt;/p&gt;
+&lt;p&gt;Vous êtes encore là ?&lt;/p&gt;
+&lt;p&gt;Alors vous avez prix la bonne décision.&lt;/p&gt;
+&lt;!-- Voici trois manières de créer un site ou un blog avec wordpress. Elles sont ordonnées par ordre de préférence. --&gt;
+&lt;h2&gt;1. Créer un site avec Wordpress et BlueHost&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/out/bluehost&quot;&gt;Bluehost&lt;/a&gt; est un choix intéressant car son offre est abordable et fiable.&lt;br&gt;
+Pour moins de 3€ par mois, vous aurez:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;un nom de domaine &lt;/li&gt;
+&lt;li&gt;un certificat SSL&lt;/li&gt;
+&lt;li&gt;un site sera en ligne 99.9% du temps. &lt;/li&gt;
+&lt;li&gt;une adresse email pro&lt;/li&gt;
+&lt;li&gt;30 jours pour changer d’avis &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En outre, cet hébergeur est officiellement recommandé par WordPress.org&lt;/p&gt;
+&lt;p&gt;Prix mensuel: 3.95$ à 5.95$ soit 2.54€ à 4.23€. Nom de domaine inclus  &lt;/p&gt;
+&lt;h3&gt;Choix et réservation du nom de domaine&lt;/h3&gt;
+&lt;!-- ![](./img/BlueHost0.png)  --&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/out/bluehost&quot;&gt;Cliquez ici&lt;/a&gt; pour réserver votre nom de domaine  &lt;/li&gt;
+&lt;li&gt;Cliquez sur &lt;a href=&quot;/out/bluehost&quot;&gt;“Get Started Now”&lt;/a&gt;.  &lt;/li&gt;
+&lt;li&gt;Choisissez le &lt;strong&gt;plan basic&lt;/strong&gt; à 3.95$/mois. À moins que vous ayez des besoins hors du commun. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- ![](./img/BlueHost1.png)  --&gt;
+&lt;p&gt;Il ne vous reste plus qu’a réserver votre nom de domaine: &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/BlueHost2-e92fb595387e29f7d1d0af7de40c420d-4f708.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 356px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.47191011235955%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+ElEQVQ4y5VSS27UQBCdIyBxEw7ARUC5BEsOwRXYwIIoYofEhgUiIkgskPiGZBTGM4Pt+De22/1zdz+qe8bWOB8QJT1Vdbn7uT5vllQaTBowYdASGr6Nh9yQZ7tvN6HuDLi0iDKJmb/onIPUFr1x8CaVBaOLPuehewtF/l/mi5v5v29Yj49nLCDKFFaED6ctvi46nC4FTii+SNX4kP4fihhg7baQuFSY+ZKN6bGpGepWoOMSrBOoag4uFOqGoWo4GOMQQlBOEIHdEe8I3R5hK6gdKRAnMcqyRJ5nWK+WqDcVKkJR5CiLLOSTNEWWZUQybX9C6Cu8an6WNLbg/VgNxd7bHTQdVO9nbAKZ2ydktJ0Nk/jyq8KneYHP5BuuaWs9ugk0weBsmeHn+RzROsaP8wU2TTcWsmvZhAernGOZdcH7h4K2ypUZIZQ/W/zOW6zjFEXVIM4qUoOcEvqWHS2l7zWcpdj2UEqRdCRJRUMTlKazpDPBUP++/WEk7uoM/VI0PV7HCdJLGjyhoOXEtICypMWEReVhGUmSkAr4IJ7RTwjrrsf/2r4Gr8lGKEeibfHs7QUOjxcBPn73Ld1KwrprBAPpjbLxwdM3c9x5+AL3Hr3C/cevcffgEA+eHIdL5hbCW3W4X+HR+wgvTyI89xV+v5y09zcbCSuFP8tsNUoxaU+4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;BlueHost2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/BlueHost2-e92fb595387e29f7d1d0af7de40c420d-4f708.png&quot;
+        srcset=&quot;/static/BlueHost2-e92fb595387e29f7d1d0af7de40c420d-3ce68.png 158w,
+/static/BlueHost2-e92fb595387e29f7d1d0af7de40c420d-2f1e2.png 315w,
+/static/BlueHost2-e92fb595387e29f7d1d0af7de40c420d-4f708.png 356w&quot;
+        sizes=&quot;(max-width: 356px) 100vw, 356px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;/p&gt;
+&lt;p&gt;S’il est déjà pris, essayez de varier l’extension ( &lt;strong&gt;.com, .io, .net, .blog&lt;/strong&gt;, etc… ) ou de rajouter un tiret. À défaut, Bluehost vous proposera des variations.   &lt;/p&gt;
+&lt;h3&gt;Mise en place de l’hébergement&lt;/h3&gt;
+&lt;p&gt;Une fois le nom de domaine enregistré, continuez le processus d’inscription. Décochez toutes les options payantes si vous n’en avez pas besoin.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-7e7a6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 54.26195426195426%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABPElEQVQoz42TiXKDMAxE8///CSUQ4/iSL8xWcjIZmqOtZxYLMM8rWZxiaRh1wsCabcHiCiaT4dKG57Hv+69qrFPddiSGBgaEvGH1GZoVy8aqXZQLr6n9o9+GvD8d18gO85VwsRHaOIznGedFYVouWJRGa+2j0wdQICFV+Fi6RuXxpQnGWpScj9u/APAOKHHi9BzDxN24ep4jYoy4sktK5eHsOb3nuAMlEKDiNEWrS7hyDUPMGCaF4azgvEcppSuz61rrS+oHh7cb4rQtle6Ucu3OFmVw0a4DPSuE0Gci+gF5Abb7AwGKQ4HKqSptsRoGMUBKkFPqMXH8EShBZEfKRTgGWsodLA7HWXPKGtbdHPq7wxD+cHgvbb/WrWE2XE9tMIxTb5tyqNnhWN73YXvTU8QNTjHxIeR//SFHfQOi/19tVq6F1gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;BlueHost3&quot;
+        title=&quot;&quot;
+        src=&quot;/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-082ce.png&quot;
+        srcset=&quot;/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-c7cb1.png 158w,
+/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-93041.png 315w,
+/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-082ce.png 630w,
+/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-c4006.png 945w,
+/static/BlueHost3-5f59b6bcfa1cf76629e9deeb9a8af627-7e7a6.png 962w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;/p&gt;
+&lt;p&gt;Vous obtenez un prix de 5.95$ &lt;em&gt;(4.25€)&lt;/em&gt; par mois en payant un an d’hébergement soit 60€.&lt;br&gt;
+Pour bénéficier du tarif à 3.95$ &lt;em&gt;(2.55€)&lt;/em&gt; par mois, il faut payer trois ans soit 120€. &lt;/p&gt;
+&lt;h3&gt;Installer Wordpress sur Bluehost&lt;/h3&gt;
+&lt;p&gt;A ce stade, votre présence sur le web est assurée. Mais si vous vous rendez sur votre URL, il n’y aura pas grand chose. C’est parce qu’il faut encore installer Wordpress. Sur Bluehost cet étape nécessite…&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;un clic&lt;/em&gt; !&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-e08f7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 53.383084577114424%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACi0lEQVQoz3WSW09TURCF+7PwwRd98Bajv8DEV58MJqKiBmhQSFBegIBGAsGq9FCoAdEWkfulAhWkpVDaCpG20jaetrTn9ELP5xwwGGOcZO219+zbzKyxVHfvcLUxwoWHIc4/DHLugckhztwNUnVri1OCqurNEzZ9Z+8FuVgX5nJD5Igv1Ue4Yo1wumYbS6lcRi8ZVAyOzSjLYKIoqAhKAv23Tz/2VTTzIP+agSWjptG1QyLBMFvrXsa8Ks0DSR7ZEzQpJqd4MpCmQUlhHUzzqH+fZiXBY9k3ucGuYlVU6mxR9tUyltqaWmbGp+nu6KK1sYGJ5T3u9MRxr8d4PLqCY9XHdVc3wckAoY432AIaLUsqds8eTZ/ihBcUfONd+KISf0EevF19E/eIk6XZKey2PsKxn6wmIFMs4k9qJHUVV9QHqgqbPnakAt48JNJZNhMySa9TSa39Sfm7XPLvZNjay3Fglmk/Dg4HlfwO7PWSykXYyjgo+HbJvPVgJOZgo535DAzH9KNnClLO8mEFQ9gysVGiZypH72SWRE528yrG52X5TMJU50SKGLvaNMT3MbwByWtTPp3gu2jjz5X+kcVirX9AS5MVq9TvaXsbMxsqw3LHtVbkwxeDwYUCigTlXNFxfj2UdYmBRRhdVHnvycg6jVMwOK+SyR9iefm6n0FFobXPTuu7j7j7J7Def8WzniWudX7jhdPPC9sI7c4gba/nqRsKcMM2Rbc7TeeHFM9NuFJ0jiZIZUWUrLSMrmknIedDftyeZZL+NdrnRLqiCLLdKu24K6mO4T8IYIsM8T+z/IjHiUaj/IjHjhy6Z5akQ0EP+EkVzFYwyArnTdYNNJlrokWxXBEhjL9giCq/AMmC+Qo/1OQ3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;BlueHost4&quot;
+        title=&quot;&quot;
+        src=&quot;/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-082ce.png&quot;
+        srcset=&quot;/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-c7cb1.png 158w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-93041.png 315w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-082ce.png 630w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-c4006.png 945w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-85e68.png 1260w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-38b38.png 1890w,
+/static/BlueHost4-18d60cca4253b28165a08d16b29c0f06-e08f7.png 2010w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;/p&gt;
+&lt;p&gt;Félicitations ! Votre site est en ligne.&lt;/p&gt;
+&lt;p&gt;Vous avez dû recevoir un email de Bluehost avec vos identifiants. &lt;/p&gt;
+&lt;p&gt;Vous pouvez commencer à écrire si l’apparence vous convient. Mais il serait plus avisé de &lt;a href=&quot;#wp-setup&quot;&gt;choisir un thème&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- ## 2. Créer un site avec Wordpress et OVH
+Pour 43€, vous pouvez créer et héberger facilement votre site web sur [OVH](https://www.ovh.com/fr/hebergement-web/).  
+
+Cette offre inclue:
+- Une adresse email pro
+- un nom de domaine offert la première année. 
+
+[Cliquez ici](https://www.ovh.com/fr/hebergement-web/) pour choisir votre offre d’hébergement
+
+![](./img/ovh0.png) 
+
+L’offre perso devrais suffire pour la plupart des cas. De plus, si vos besoins augmentent par la suite car la popularité de votre site devient incontrôlable, vous pouvez toujours migrer vers une offre supérieure. 
+La facture finale de l’offre perso sera de 43€TTC Nom de domaine, emails et certificat SSL inclus. 
+Le nom de domaine est offert la première année.
+
+IMG
+
+Réservez votre nom de domaine et suivez les étapes jusqu’a arriver à cette page:
+
+![](./img/ovh2.png) 
+
+Sélectionnez WordPress et continuez
+
+Dans les étapes suivantes, votre mission sera de déjouer les tentatives d’OVH de vous faire souscrire un tas d’autres services. Je vous recommande de ne rien cocher, excepté &quot;Je ne souhaite bénéficier d’aucune offre d’essai.&quot;
+
+Une fois les tentatives déjouées, il ne vous restera qu’a suivre les étapes jusqu’au paiement.  
+
+Vous avez à présent un nom de domaine associé à un hébergement avec wordpress installé. Accédez a l’interface de gestion de wordpress à l’adresse suivante: 
+Et voila ! Vous avez un nom de domaine chez OVH et un hébergement avec WordPress installé.
+
+Si jamais vous avez raté l’étape d’installation de wordpress, connectez vous à votre interface de gestion en [cliquant ici](https://www.ovh.com/auth/?action=gotomanager). Pour cela, utilisez les identifiants que vous avez reçu par email.
+
+Rendez-vous dans hébergement &gt; Modules en 1 clic et cliquez sur WordPress et décocher la case installation en mode avancé
+
+![](./img/ovh3.png) 
+
+Vous allez recevoir un email de confirmation de la part d’OVH contenant toutes les liens pour accéder à l’interface de gestion de votre site web, ainsi que vos identifiants et mots de passe.
+
+Si vous rencontez des difficultés avec ce module, allez voir les [F.A.Q](https://docs.ovh.com/fr/hosting/modules-en-1-clic/)
+
+Il ne vous reste plus qu’a configurer et personnaliser votre site web. --&gt;
+&lt;!-- ## 3.Créer un site avec Wordpress et Namecheap
+Je ne le recommande pas. Pas encore du moins car ils sont en Beta, n’offrent pas de SSL, manque de contrôle et mauvaises performances. Mais très économique et installation rapide.
+Meilleure alternative à ce service en terme de prix, rapidité d’installation et fiabilité: la version hébergée de WordPress
+Prix annuel: 6.80€ (8.88$) + Nom de domaine.
+Rendez vous à la page d’accueil de EasyWP pour commencer l&apos;inscription.
+Cliquez sur ‘Get EasyWP’ puis sur ‘Create Namecheap account’.
+Payez les 8.88$, ce prix n’inclut pas le nom de domaine que vous devrez payer par la suite. 
+Vous avez wordpress. --&gt;
+&lt;h1 id=&quot;wp-setup&quot;&gt; Configurer et Personnaliser un site WordPress &lt;/h1&gt;
+&lt;h3&gt;Wordpress en Français&lt;/h3&gt;
+&lt;p&gt;Rendez vous dans &lt;code class=&quot;language-text&quot;&gt;Settings &amp;gt; General&lt;/code&gt; pour sélectionner votre langue&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-85cb9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.92532942898975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABg0lEQVQoz42SzUrDQBSF8ygKImpri39gSxVb1IWC+hL6Dr6L0mqlWt26dNUXEEEEa/8l/zPJTDTp8ji5aYu4UBcflwwz595zT7TltRxmFzI4Oy/Dsiw0m29wXQbOOTzPg+/7VMfwH3jfqqfuarnCFqZm5lCuXCIMQxISQoAxBhkEdBZFEVUp5Z9oG8VdzC8uoXJZxXA4JKF4Ksuyoes6TR03kTKAUA/iZr+h5QubSKUzqFQuSKjfH4ws+GQhFopoyhBBIBHIEUGC/NFEy+8cYDqzjur1HcLPTziOoy4JtFtNmLoS5wyuJxUChs0I00mqbrlwmTcRJst7x6fIHp6gfv+ADyUUL9fhAo3HARpPJp47HIzHeLAdVzVUuAnxdxKgaqq+Y4dasbSNtLJcr9dp+UlaAi+vXbR6Bt4NB66amtJkyeMETvse14ng7v4Rsqs51G5u6cC2E8vdThv9XhdS+P9Kd2I5v1lCKruC6lWN9qfrBoXyqv7HVrsDw7Ro2fKPdMd8AbxxehnLdGUoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;mettre wordpress en francais&quot;
+        title=&quot;Changer langue wordpress&quot;
+        src=&quot;/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-082ce.png&quot;
+        srcset=&quot;/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-c7cb1.png 158w,
+/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-93041.png 315w,
+/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-082ce.png 630w,
+/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-c4006.png 945w,
+/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-85e68.png 1260w,
+/static/wp-fr-72f037b3568c1cac1c8a5a440270946d-85cb9.png 1366w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Profitez-en pour donner un titre et un slogan à votre site.&lt;/p&gt;
+&lt;h2&gt;Thèmes wordpress&lt;/h2&gt;
+&lt;p&gt;Les thèmes font partie intégrante de wordpress. Ils permettent d’en définir et modifier l’apparence.&lt;br&gt;
+Wordpress est préinstallé avec un thème par défault.  &lt;/p&gt;
+&lt;p&gt;En général, il convient d’installer un thème qui sera adapté a vos besoins.&lt;br&gt;
+Celui-ci peut être gratuit ou payant.&lt;/p&gt;
+&lt;p&gt;Gardez en tête que la qualité de votre contenu est bien plus importante que l’apparence de votre site ou blogue.
+Un article de qualité peut être populaire même sur un blogue moche alors que l’inverse n’est pas vrai.&lt;/p&gt;
+&lt;p&gt;Prenont l’exemple de Reddit. C’est le sixième site le plus visité au monde. Pourtant, il a un design digne du &lt;a href=&quot;https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html&quot;&gt;premier site jamais créé&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Solution simple: Elegant Themes&lt;/h2&gt;
+&lt;h4&gt;Coût: 76€ par an&lt;/h4&gt;
+&lt;p&gt;Vous grimpez aux rideaux à la vue du prix ?   &lt;/p&gt;
+&lt;p&gt;Alors passez à l’étape suivante qui est l’alternative gratuite, mais sachez que payer facilite parfois grandement les choses.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.elegantthemes.com/gallery/divi/&quot;&gt;Divi&lt;/a&gt;, le fameux thème prémium  &lt;/p&gt;
+&lt;p&gt;Un &lt;a href=&quot;https://www.elegantthemes.com/plugins/divi-builder/&quot;&gt;site builder&lt;/a&gt; intégré capable de créer tout vos designs  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.elegantthemes.com/plugins/monarch/&quot;&gt;Monarch&lt;/a&gt;: un plugin prémium de partage social. Options avancées mais simple à configurer&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.elegantthemes.com/plugins/bloom/&quot;&gt;Bloom&lt;/a&gt;: Un plugin premium pour construire votre liste d’emails&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Maintenant, est-ce que cahque pièce de cet ensemble est la meilleure du marché ? Je ne crois pas.&lt;/p&gt;
+&lt;p&gt;Je dirais même qu’ils ne sont les meilleurs dans aucune des catégories précédentes.&lt;/p&gt;
+&lt;p&gt;Mais la combinaison de tous ces produits rend le processus de démarage et de design et de mise à jour bien plus facile. De plus, on se retrouve avec un design profesionnel et de qualité, facilement modifiable avec le site builder, à un prix relativement faible.  &lt;/p&gt;
+&lt;p&gt;C’est surement ce qui leur a permis d’être l’entreprise de vente de thèmes la plus populaire, avec plus de &lt;em&gt;500.000&lt;/em&gt; clients au compteur.&lt;/p&gt;
+&lt;p&gt;En résumé,&lt;/p&gt;
+&lt;p&gt;Si vous avez besoin d’un beau design, que vous pouvez mettre en place rapidement et modifier vous même sans avoir à faire appel à un technicien, &lt;a href=&quot;&quot;&gt;Elegant Themes&lt;/a&gt; est probablement ce qu’il vous faut.&lt;/p&gt;
+&lt;h2&gt;La solution gratuite&lt;/h2&gt;
+&lt;p&gt;Payer n’est absolument pas nécéssaire. Il est parfaitement envisaageable et très courant de choisir son thème et ses plugins manuellement, parmi l’offre gratuite.&lt;/p&gt;
+&lt;p&gt;Voilà la marche à suivre pour installer un thème gratuit:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cliquez sur &lt;code class=&quot;language-text&quot;&gt;Apparence &amp;gt; Themes &amp;gt; Add New Theme&lt;/code&gt;.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-85cb9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.2913616398243%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+0lEQVQoz53Q7UtTURzA8fu3RC+W6WQxt/k0VkwWSJgGVi/Coqh8EbNVFi3MIihpK+YSdZrN1SKxZII9SwMJMpXJilgRCoJLh+3e3btbbKP4dvWFvbAgOvDl8DtwPhyOYKqwYrRUceDgYVqcLhr2NFJqNFNlrcbucHD9ho/gYAhH7W4sZQZcR+ppd7vw3PRzq6cPb2c3fcEwgf4BegP9CAZTBZt0JXT7PLyfGENNJWhzt2I1b2PYf4F8vsDqisVmGX8yyuLHKXLKCkvJJF8+xfm2EGclMUUhnyeZXESorKxGV6Sn1dlMm7OJa20n2V9XQ7nFzMVzLaykUqRFiVwuh5JVySgqhR8/mZ58w1BXBx+eDfB6yI+YFllaXkbY0XQGy94TeAJhHjyMEAje5/ZgmFDkBSOvJpFEkXQ6jSRJZLNZVC1FUZC1vkoyoqyifM+jqupagr1uH+U2B6c8d2jwRanteEy99zk1V0Y52jOuQZk1IJPJbEiWZS1tz0jrZ8J2+07MJhPHL/nZ7AzT3PuSp7F5tjgHcVx+tAauXvwNyOvzRlzW/tBWg7HMxLH2TkrPDtPoHaMjMo3edY9dVyOIqy/8A/i3BHOljeLiEg6d91LmHtGguxhOhylqCf0faKmyoduqp6s/xMxciujsZybezRONz/E2sbAO/Sv4C5KAMaipChJ9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;installer theme gratuit&quot;
+        title=&quot;installer theme gratuitement&quot;
+        src=&quot;/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-082ce.png&quot;
+        srcset=&quot;/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-c7cb1.png 158w,
+/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-93041.png 315w,
+/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-082ce.png 630w,
+/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-c4006.png 945w,
+/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-85e68.png 1260w,
+/static/installer-theme-gratuit-cec421f1718a062e2b99cfaf222f3a29-85cb9.png 1366w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/li&gt;
+&lt;li&gt;Choisissez votre thème  parmi les milliers disponibles et cliquez sur &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;install&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ensuite vous n’avez qu’a installer vos plugins.&lt;/p&gt;
+&lt;h1&gt;Plugins WordPress indispensables&lt;/h1&gt;
+&lt;p&gt;Le plugins sont les pillier sur lequel wordpress tient. &lt;/p&gt;
+&lt;p&gt;Une des raisons pour lesquelles on utilise le CMS Wordpress plutot qu’un autre c’est qu’il a une communauté bien plus large. Ce qui veut dire plus de thèmes et plus de plugins.&lt;/p&gt;
+&lt;p&gt;Ces plugins sont des fonctionnalités pré-développées par des développeurs pour la pluspart très compétents et vous n’avez qu’a les installer gratuitement. C’est l’une des forces de wordpress.&lt;/p&gt;
+&lt;p&gt;Voilà quelques plugins indisepsables pour vous aider dans votre aventure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Statistiques de visite&lt;/strong&gt;&lt;br&gt;
+À moins que vous souhaitiez mettre les mains dans la boue pour installer &lt;a href=&quot;https://matomo.org/&quot;&gt;Matomo&lt;/a&gt; (anciennement piwik) qui est une solution opensource utilisée nottament par le fournisseur d’accès à internet Free et le magazine Forbes, il va falloir installer Google Analytics. Après avoir créé un compte, il va falloir le configurer sur wordpress.&lt;br&gt;
+Les principaux plugins sont &lt;a href=&quot;https://en-gb.wordpress.org/plugins/wp-analytify/&quot;&gt;Analytify&lt;/a&gt; et &lt;a href=&quot;https://fr.wordpress.org/plugins/google-analytics-dashboard-for-wp/&quot;&gt;GADWP&lt;/a&gt;.
+Les deux ont une version gratuite et affichent vos statistiques sur le tableau de bord.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-edd3e.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.172619047619044%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQoz01SC7KDIAzs/Wd6mF7qtUVA+X8M5iVB2zLDoCu72Wy8lVIfSGvfd6i1IgAgjDFPGPLce5c9fnB+7vuOrTXGOmvkUu43AkTwOA4IIQiR1xgHXqu2iqUUPO/JFpwMpJRYXEhk7n6rdQrGEEG9FVprr6qymWC1QaWUiDLGgtQRBudRa405534WuN/o0oMv/Zk3KLOgIbIxRqrnlPGlFT6tEuJJRtgBfQz4WhUuRqNz7tsyC/LLVgJs0WOMUbJhB0zMvaJNbuKc5fmt9IYmbui8/zik85vhgAHc6ifD45thyUUcXxlea1DBE58Zcsut9ZlhjLBtG9uXDFmQo2hEWNdVsmUyT1ccchHKlJ1Tl79Dmb+NjQ70amg4QYiz5R3X4PBp3iLIA2Kcu9DWCG7oNFqfgpQh9T0FswdLmXgfZJrskrcvCZe8Cs4DuWLJteBSqKPgMcUkgoky/Ac837Zomeo7QwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;google analytics&quot;
+        title=&quot;&quot;
+        src=&quot;/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-082ce.png&quot;
+        srcset=&quot;/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-c7cb1.png 158w,
+/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-93041.png 315w,
+/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-082ce.png 630w,
+/static/google-analytics-a440785a0beadd7e30bf4c320ec8ff65-edd3e.png 672w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+      &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SEO&lt;/strong&gt;&lt;br&gt;
+Votre position sur la page de résultat de google vas dépendre de la qualité du SEO de votre site et articles. Il n’est pas toujours facile de mettre en place de manière régulière toutes les meilleurs pratiques et de rester à jour par rapport aux évolutions de google. Heureusement, le plugin &lt;a href=&quot;https://fr.wordpress.org/plugins/wordpress-seo/&quot;&gt;Yoast SEO&lt;/a&gt; est venu résoudre ce problème. À l’aide de pastilles vertes, oranges ou rouges, ils vous indique ce qui est bon ou pas au niveau de l’article que vous êtes entrain de rédiger. De plus, il crée automatiquement les balises opengraph et twitter cards qui améliorent l’apparence de vos articles lorsqu’ils sont partagés sur facebook et twitter.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fr.wordpress.org/plugins/all-in-one-schemaorg-rich-snippets/&quot;&gt;All In One Schema.org Rich Snippets&lt;/a&gt; est un autre plugin à explorer car il permet d’améliorer l’apparence de votre lien sur les résultats de recherche. Cela en ajoutant des Rich Snippets a vore site.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-f0e38.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 39.090909090909086%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABiUlEQVQoz42S646bMBSE8/4PVlXqNveQTciCucTcCdiEhNy+2qy6q/4r0shzfKzxHA8TpS6IsMYLKqq6Q2YtrleQ5orn88Hr9eJ/P3t2UjUNm73Lzg/wjxFuEOAcfPZCEGeSy3Dldn9wHQaG283UA/3lyvl8/oJSivv9PopO6kSy/vkDdzHjsJgbzHDn05F7qyXb32/sZ1P28xnhdkvue1RSoruOvu9HWMGbuWwUTN8dnOkbnrPmw9mQCp88CsnDgHcj6q6XHDZrdoZHhz2qzHmUGU1dcTzGFEX+78jnsqKOEk4yR2clKi24Vu3I2ySjPqamZ9Y4oQjl2G+S3LjqKSvFqem+xEaH5Umx2AbMnICdF7MTkpUrTC34CDNk3nPMuhGh1Ca0jjjRpLaOW2SqTXhPK/npsFUNvjgQRj7CjLv1VizFLwITShgJiiylyDOyVFIW1llD16nPVZtJDOr69O1wMKnZDa31mFjbKsM7c7hDK01j/gLbsw9ve3eTuHX0sHg8R27F/gr+AToaWt2fjRKjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Rich Snippet Wordpress&quot;
+        title=&quot;&quot;
+        src=&quot;/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-082ce.png&quot;
+        srcset=&quot;/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-c7cb1.png 158w,
+/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-93041.png 315w,
+/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-082ce.png 630w,
+/static/rich-snippet-acadbf94a161e1895551f75de8e99ed3-f0e38.png 660w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Améliorer dramatiquement les &lt;em&gt;performances&lt;/em&gt; du site&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&quot;https://fr.wordpress.org/plugins/wp-super-cache/&quot;&gt;WP Super Cache&lt;/a&gt; est un plugin développé par Automattic, l’équipe qui se cache derrière WordPress. Ce plugin est plus simple à configurer que ses concurrents et va vous permettre de booster les performances de votre site. N’oubliez pas de l’installer avant d’avoir beacoup de visites, votre serveur vous en remerciera.
+Si vous avez besoin d’aide pour le configurer, lisez &lt;a href=&quot;https://www.notuxedo.com/wp-super-cache-wordpress/&quot;&gt;ce guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposer un meilleur contenu&lt;/strong&gt;&lt;br&gt;
+Il serait dommage que vos visiteurs partent trop tôt parceque vous avez failli a votre mission qui est de leur proposer plus de contenu.&lt;br&gt;
+Deux plugins sont là pour vous sauver la mise. Premièrement &lt;a href=&quot;https://fr.wordpress.org/plugins/yet-another-related-posts-plugin/&quot;&gt;Yet Another Related Posts Plugin&lt;/a&gt; vas vous permettre de proposer des articles similaires à celui qui est entrain d’être lu grâce a un algorithme qui analyse le contenu de chaque article, ainsi que son titre, ses catégories et ses tags. Finalement, le plugin &lt;a href=&quot;https://fr.wordpress.org/plugins/wordpress-popular-posts/&quot;&gt;WordPress Popular Posts&lt;/a&gt; permet de créer une liste d’articles triés par popularité. Les articles populaire son rarement populaires par hazard, veillez a bien les mettre en valeur. Dans la sidebar ou le footer par exemple.&lt;/p&gt;
+&lt;h1 id=&quot;ghpages&quot;&gt; Créer un site avec Github Pages &lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Vous avez besoin d’un compte Github. &lt;a href=&quot;https://github.com/login&quot;&gt;Connectez-vous&lt;/a&gt; ou &lt;a href=&quot;https://github.com/join&quot;&gt;inscrivez-vous&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Créez un répertoire GitHub avec le nom votrepseudo.github.io. Où votrepseudo est le pseudo défini en étape 1. C’est important pour que cela marche. Ce sera l’url du site.&lt;/li&gt;
+&lt;li&gt;Rendez-vous dans l’onglet “settings” ou vous trouverez les réglages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Défilez la page jusqu’a la section GitHub pages&lt;/strong&gt;
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-0b62e.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 48.014440433213%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABPUlEQVQoz51S0W6DMAzs/3/jBLQMyqBVAk4IoU1utmG0j1MjWbZDOJ99PnVdh6ZpUNc1brc7Pj05Z/UnYwnDfcRPf0M/DIgxYlkWhLCon+ewx5F90Hz7Hg5LKSmg2In8A4Ye8PMKay2maQKRwzhOHBOssRqTk7sRhvMtnmA5F59SfjG01qDllqXSuq7sZzjnlakwe2fyYjljZh/5vcRy9wY4oijPKIoSl6ZD3Rp0vUHgh857BnfKSIpITkTbHXfh/ay5FD4AA1dtux6OZ2PJfyyKtL2JYgwqZleVFSQmrU6HH3WmpLMSRtKi9wsmnv0Sn6Kvskt/DImV/S4qtOcLrgzqeARhV1F/3ufluV1RN0ZRnGe3PLE+0rEyB6Dj3au+SpwZ9MqzzCzGPzdPkDawlHV1FBAS5N3e9ukTk/ML6toK4GBVJusAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;GithubPgaes2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-082ce.png&quot;
+        srcset=&quot;/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-c7cb1.png 158w,
+/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-93041.png 315w,
+/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-082ce.png 630w,
+/static/GithubPgaes2-126b3bfe2ebe21c00277b139e4b40366-0b62e.png 831w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choisissez votre thème&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Personnalisez votre première page en markdown et cliquez sur “commit” en bas de page pour sauvegarder et publier les changements.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Votre site est en ligne ! Vous pouvez y accéder tapant l’url définie en étage 3. ( pseudo.github.io )
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-85cb9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.47437774524158%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQ4y51Ta5OCMBC7//8L/eycgoLQFqSlD3KbOmU81PG8zmSW14Yk3X5B1rIsLEhpgfMJ1keMLiDKPd9Za+GcwzRN+Xq7Sj/X1/0DM83YfXfYHTrs2xEuJCwpoToecTjW2B9qNE2LeXbw3meU3lJ/EbKmGEVpXP+YhPByuaDvFZQ2MMZAK4Wu76GH8db3ijAK2SSWaGu42lVhXdcYhkGUzSucY32jkGqYFRusNISY8jutNbquy+qYI78h+GOKeCDcBrsNvL202TaJqbQQEk8J72VvwdU0jWTYY5ZNKMoKXip8pqx8RLta7HJXXc7vD5ZfzRZrVVVozqJS9RiEfBTyfyks1UhuRkalldHRSmd1ZQ65kR8RsoEZKiGa5QRdnYedQ35OPB2bd4R1XeEklk9tJ7YVxuE24EQI4TNCZnSW40aVtO59kPmMGfHO7gcKFygzroqmyWbLhA+PhD/wM0wjoNpq5wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;GithubPgaes5&quot;
+        title=&quot;&quot;
+        src=&quot;/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-082ce.png&quot;
+        srcset=&quot;/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-c7cb1.png 158w,
+/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-93041.png 315w,
+/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-082ce.png 630w,
+/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-c4006.png 945w,
+/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-85e68.png 1260w,
+/static/GithubPgaes5-9ee86e78d0cdbe9584bf2c202d05df88-85cb9.png 1366w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;Configurez votre propre nom de domaine&lt;/h3&gt;
+&lt;p&gt;Si vous avez acheté votre nom de domaine sur &lt;a href=&quot;/out/namecheap&quot;&gt;NameCheap&lt;/a&gt;, vous pouvez maintenat l’associer à votre site web. &lt;/p&gt;
+&lt;p&gt;Je recommande &lt;a href=&quot;/out/namecheap&quot;&gt;NameCheap&lt;/a&gt; car ils ont un rapport qualité-prix excellent, sont honnètes et offrent WhoisGuard gratuitement sur tout les noms de domaines pour protéger votre vie privée.&lt;/p&gt;
+&lt;p&gt;Une fois que vous avez votre nom de domaine, suivez les étapes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redirigez les DNS Nameserver vers ceux de github.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Depuis votre tableau de bord NameCheap, cliquez sur “Domain List” Puis sur “Manage” à coté du nom de domaine correspondant.  &lt;/li&gt;
+&lt;li&gt;Dans la section “NAMESERVERS”, choisissez “Custom DNS”.&lt;/li&gt;
+&lt;li&gt;Ajoutez l’url &lt;em&gt;actuelle&lt;/em&gt; de votre site. celle que vous avez définis en étape 2 (votrepseudo.github.io)&lt;br&gt;
+Dans mon cas, se serais: &lt;strong&gt;scriptor.github.io&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ajoutez un fichier CNAME à la source de votre site.&lt;/strong&gt;&lt;br&gt;
+Ajoutez un fichier vierge, appelé CNAME. Il ne contiendra qu’une seul ligne. Votre nom de domaine.&lt;br&gt;
+Exemple: &lt;em&gt;scriptor.io&lt;/em&gt; où &lt;em&gt;google.com&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Activez le HTTPS&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mise à jour:&lt;br&gt;
+Depuis le 1 mais 2018, l’utilisation de CloudFlare n’est plus nécéssaire.
+Github supporte maintenant officiellement le HTTPS.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Une option à cocher (dans l’onglet settings de votre repo):&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/github-https-9014df922a33e98a4b7c25e254a396fc-e6878.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 14.266842800528401%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAd0lEQVQI153O3Q7CIAyGYe7/GmcyTTzQ6fpDsYqBz8EWLkCSJz1p3xDEHO4vmBlKKfj31Vr7fbhcb5imE+b5jGV5QERBRBsemBnrSniSQjRBNSLGxpAsjc+0aHB3RNuXRoT32SINi2yhiDs5SN/45IzcfQ+5B5sfySrolRbQomcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;github https&quot;
+        title=&quot;&quot;
+        src=&quot;/static/github-https-9014df922a33e98a4b7c25e254a396fc-082ce.png&quot;
+        srcset=&quot;/static/github-https-9014df922a33e98a4b7c25e254a396fc-c7cb1.png 158w,
+/static/github-https-9014df922a33e98a4b7c25e254a396fc-93041.png 315w,
+/static/github-https-9014df922a33e98a4b7c25e254a396fc-082ce.png 630w,
+/static/github-https-9014df922a33e98a4b7c25e254a396fc-c4006.png 945w,
+/static/github-https-9014df922a33e98a4b7c25e254a396fc-85e68.png 1260w,
+/static/github-https-9014df922a33e98a4b7c25e254a396fc-e6878.png 1514w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Vous avez maintenat un site web, hébergé gratuitement sur github pages, sans avoir eu à configurer de bases de données ou de serveurs.  &lt;/p&gt;
+&lt;p&gt;Les performances de l’hébergemnt github pages sont parmi les meilleures. &lt;/p&gt;
+&lt;p&gt;Le site est servi depuis en CDN, En HTTPS. &lt;/p&gt;
+&lt;p&gt;Le tout, gratuitement&lt;/p&gt;
+&lt;p&gt;C’est le deal du siècle !&lt;/p&gt;
+&lt;p&gt;Vous pouvez le modifier et ajouter d’autres pages depuis votre compte github.&lt;/p&gt;
+&lt;p&gt;Si vous maitrisez git, vous pouvez faire un git pull afin de faire les modifications et mise à jour sur votre ordinateur et conserver une copie locale. Puis git push mettre le site à jour.&lt;/p&gt;
+&lt;h1 id=&quot;netlify&quot;&gt; Créer un site avec Netlify &lt;br&gt; (Et un Générateur de sites statiques) &lt;/h1&gt;
+&lt;p&gt;Cette dernière options est celle qui donne le plus de contrôle et de liberté mais aussi celle qui demande les plus de temps et de compétences. &lt;/p&gt;
+&lt;p&gt;Les documentations de chaqun des générateurs de sites statiques suivants sont excellentes. Pour la pluspart, ce sont les auteurs eux mêmes qui vous expliquent, pas à pas, comment démarrer, créer son premier site web, créer un blog, le configurer, installer un thème, un plugin etc.&lt;/p&gt;
+&lt;p&gt;Cette section ne détaille pas les étapes spécifiques à chaque générateur, mais renvoie vers les documentations respectives. Celles-ci sont très complètes et bien rédigées. Souvent par les propres développeurs.&lt;/p&gt;
+&lt;p&gt;En revanche, c’est une vue d’ensemble de l’écosystème que nous passons en revue ici. Du choix de générateur jusqu’a la mise en ligne &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctionnement d’un site statique&lt;/strong&gt;&lt;br&gt;
+On dit qu’un site est statique lorsque seul sont hébergés les fichier HTML, CSS et JavaScript. Le site statique que l’on va créer a un serveur. C’est le générateur de sites statiques. La différence avec un site dynamique c’est qu’il ne tourne pas tout le temps. Un site dynamique génère les pages sur demande tandis que le générateur génère toutes les pages d’un coup, puis nous laisse héberger les fichiers fichiers produits qui sont statiques.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bénéfices et inconvénients d’un site statique&lt;/strong&gt;&lt;br&gt;
+Performances extremes, plus rapide que 98% des sites web testés avec Pingdom. Complètement chargé en 376 millisecondes.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-624e8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 630px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 32.421875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAAA4ElEQVQY02VRi27EIAzr///lWum0DXokpRTa0no499h2h2QRk8QO0MUYMQwDQgjY9x05ZyzLYiglw8mMixeMQaHThHme/9UwLqU8eZdSsoNv5/DR90jt8DgObNsG5kSuUBUToiGbVNXyBLn3Huu6mk5HBy6ZIvrLJ0ZR47XWhgNf2sNfXROrZsQbUeCWryZKzhxFn4Kp7UEjYlpwnmcr3q0gl9u12Gi8xRRl/ACnf5vwddGdrt6PcO53IjaJiJnSJLQc/2Bq70tugnybv3hcheA0LOYE5MzbfhcvrT/fQf4DBXXSDBLeIdkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;create fast website 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-082ce.png&quot;
+        srcset=&quot;/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-c7cb1.png 158w,
+/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-93041.png 315w,
+/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-082ce.png 630w,
+/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-c4006.png 945w,
+/static/create-fast-website-1-95ec57f680ff0b22e738c75433693bb2-624e8.png 1024w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Il n’y a pas de bases de données à mettre en place et pas de serveurs à configurer. Dans beaucoup de cas, vous n’avez même pas besoin de savoir épeler HTML. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/create-fast-website-2-56b52c1a856cd1a142edcc081e69c6d5-16ff6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 595px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 51.092436974789926%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABb0lEQVQoz3VSCXKDMAzk/y9MM819AbZjYw5fkK3kJJS2U83sSGMJabWiwMIej8fsl2Ar7x32pcWhNNiVDXY3jcHHP/XF74+XTZaDtNb4/Nxgs9lmHA5HOOfw2wr8Y+OUMqZphA8OxmgoJaHuEtrcIZWAafRc964tYoiwtkXf9xiGIfuUEobQIUQPHx1C8khTzHHTNjDWII0xg2vedS70KLz3OJ/P2O/3qKoSp9MZjt6YVYzxCRqaYoJtGqzXa2y327zunH/BheG5Mmt0u91Q11X2PKQf2sz4DW5graWGHzT09CM3wxPDgVZkhpfLBafjERU15YZt16Bt2x9gOZjd9XrN8TKXZXPdk2Hfd7RuRQxriFqQJoF00nQIM6OhdZVSWK1W+drMdpnnv6CjrQrWhSeWZZkZHgg+eCgtIYSElN/ghqw113O8zAkhYGmrYhxHhBCyqOy9D3T+CcoICFVD3sUTr1jIavFev8C1FTG0+AK/FgCkBPgLsQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;create fast website 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/create-fast-website-2-56b52c1a856cd1a142edcc081e69c6d5-16ff6.png&quot;
+        srcset=&quot;/static/create-fast-website-2-56b52c1a856cd1a142edcc081e69c6d5-02a0f.png 158w,
+/static/create-fast-website-2-56b52c1a856cd1a142edcc081e69c6d5-88534.png 315w,
+/static/create-fast-website-2-56b52c1a856cd1a142edcc081e69c6d5-16ff6.png 595w&quot;
+        sizes=&quot;(max-width: 595px) 100vw, 595px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Réserver et Acheter un Nom de Domaine&lt;/h2&gt;
+&lt;p&gt;La création d’un site statique est gratuit, ainsi que l’hébergement.&lt;/p&gt;
+&lt;p&gt;En revanche, si vous souhaitez avoir votre propre nom de domaine du style scritptor.io plutôt qu’un sous domaine qui ressemblerait, par exemple à scriptor.github.io dans le cas de la création d’un site web sur GitHub pages ou scriptor.netlify.io dans les cas de netlify. &lt;/p&gt;
+&lt;p&gt;Parmi les fournisseur de noms de domaines, je recommande &lt;a href=&quot;/out/namecheap&quot;&gt;NameCheap&lt;/a&gt; car il est économique, rapide et respectueux de la vie privée.&lt;br&gt;
+J’ai récemment migré tous mes noms de domaines de OVH à NameCheap.&lt;br&gt;
+De plus, contrairement a beaucoup de ses concurrents, ils sont honnêtes.&lt;br&gt;
+Le prix affiché est le vrai prix. Celui qui sera affiché sur la facture. Pas un prix hors taxes ou soumis à conditions.&lt;br&gt;
+Ils intègrent WhoisGuard gratuit à vie sur tous leurs noms de domaine. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WhoisGuard&lt;/strong&gt; est un service qui protège votre vie privée.&lt;br&gt;
+Le Whois est une base de donnée publique ou sont enregistrées les coordonnées de tous les détenteurs de noms de domaines.&lt;/p&gt;
+&lt;p&gt;Quand vous achetez un nom de domaine, vous devez donner vos coordonnées complètes.&lt;br&gt;
+Nom, Prénom, Adresse Postale, Email, Numéro de Téléphone etc..  &lt;/p&gt;
+&lt;p&gt;C’est obligatoire. &lt;/p&gt;
+&lt;p&gt;On ne peut pas réserver un nom de doamine avec de fausses informations. Sinon il n’est pas vraiment à nous et ils peuvent le reprendre à tout moment.&lt;/p&gt;
+&lt;p&gt;Ces données sont ensuite associé a votre nom de domaine et n’importe qui peut les consulter. &lt;/p&gt;
+&lt;p&gt;C’est un problème…&lt;/p&gt;
+&lt;p&gt;Si quelqu’un de malveillant atterri sur votre blogue personnel par exemple, vous ne voulez pas qu’il ait accès à ces données.&lt;br&gt;
+Avec WhoisGuard activé, le whois est rempli avec leurs données. Rien sur vous, pas même un indice.&lt;/p&gt;
+&lt;p&gt;Ils offrent donc une protection raisonnable. Meilleur que le service OWO de OVH.&lt;/p&gt;
+&lt;h3&gt;Choix du générateur de sites statiques&lt;/h3&gt;
+&lt;p&gt;Faut-il choisir Jekyll, Gatsby, Hexo ou Hugo ? Ou un autre ?&lt;/p&gt;
+&lt;p&gt;Les principales différences entre ses options le language de programmation utilisé et la taille de la communauté. &lt;/p&gt;
+&lt;p&gt;Ce dernier facteur est important.&lt;/p&gt;
+&lt;p&gt;La particularité d’un projet open-source c’est qu’il repose sur une communauté pour signaler et corriger les bugs. Développer des plugins, une documentation, aider les nouveaux a se familiariser avec l’écosystème et participer au développement du projet. &lt;/p&gt;
+&lt;p&gt;Plus la communauté d’un projet est grande, plus il a d’avenir.&lt;/p&gt;
+&lt;p&gt;Le language de programmation importe si vous êtes développeur.&lt;br&gt;
+Ainsi, vous pouvez faire vos propres modifications, développer de nouvelles fonctionnalités et participer au développement de l’application.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; est le champion vieillissant. Le plus populaire. Le premier générateur de sites statiques. Mais il se fait vieux. Il est écrit en Ruby, a le problème d’avoir le build time le plus lent. Certaines personnes laissent tomber jekyll et se tournent vers les nouveaux GSS car leur site a trop grandi et jekyll a du mal a le compiler. Malgré tout, Jekyll est encore le N°1 au niveau de la taille de la communauté. Il a l’avantage non négligeable d’avoir la plus grosse communauté et l’avantage de l’ancienneté. À choisir si vous aimez le language Ruby ou si vous n’avez pas envi de vous casser la tête. ce cador a peu de problèmes et si vous rencontrez un problème, il y a de grande chance que quelqu’un d’autre l’ait eu avant vous et qu’il ait été résolu par la communauté. A éviter si vous prévoyez de créer un gros site. Le site compilé sera très rapide comme pour tout les autres GSS mais le temps de compilation peut vous envoyer à l’asile ! Potentiellement plus de thèmes, plus de soutien.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;&lt;strong&gt;Gatsby&lt;/strong&gt;&lt;/a&gt; est une option assez impressionnante. Mon choix pour ce blog. Il a la particularité d’être développé avec React (Comprendre Javascript + fonctionnalité additionnelles). Il bénéficie d’un écosystème avec la croissance la plus rapide et tout le soutien de la communauté React. Il est facile à utiliser, très bien documenté et intègre les meilleures pratiques de développement, vitesse et SEO. On a toujours dit que react n’était pas adapté a la création de blogues ou sites statiques. Gatsby bien de changer la donne.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot;&gt;&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/a&gt; est un générateur de sites statiques créé avec NodeJS (Javascript). Il a u Il peut se vanter d’avoir une des plus grosses communauté et un build time très rapide. Le défaut majeur de cet outil, pour une personne occidentale est que la plupart de la communauté est asiatique?.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gohugo.io/&quot;&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt; est le petit nouveau. Sa particularité est qu’il est écrit en GO, un language de programmation récent, créé par google. Il n’offre pas de nouveautés majeurs par rapport a ses concurrents. C’est une alternative viable à Jekyll si vous voulez améliorer votre build time.&lt;/p&gt;
+&lt;h3&gt;Choix du thème&lt;/h3&gt;
+&lt;p&gt;Comme pour Wordpress, chaque générateur de site propose des thèmes. Certains officiels, créés par les développeurs eux-mêmes, d’autres par la communauté. Vous pouvez vous en servir comme ‘starter’, une base sur laquelle développer votre site ou comme thème définitif s’il vous convient.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//jekyllthemes.org/&quot;&gt;Thèmes Jekyll&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.gatsbyjs.org/docs/gatsby-starters/&quot;&gt;Thèmes Gatsby&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hexo.io/themes/index.html&quot;&gt;Thèmes Hexo&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://themes.gohugo.io/&quot;&gt;Thèmes Hugo&lt;/a&gt;  &lt;/p&gt;
+&lt;h2&gt;Hébergements gratuits et performants&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;Netlify&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;Github Pages&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;GitLab Pages&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;Bitbucket Cloud&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;Surge.sh&lt;/a&gt;  &lt;/p&gt;
+&lt;!-- 
+### Netlify: Offre d&apos;hébergement sans égale
+Netlify est une application web partiellement opensource permettant d&apos;héberger votre site web statique, tout en lui ajoutant des fonctionnalités de sites dynamiques, tel que NetlifyCMS, un CMS gratuit et opensource, comme wordpress qui permet d&apos;écrir et de gérer des articles depuis un tableau de bord. Elle sert aussi de backend pour les formulaires. Netlify collecte automatiquement les formulaires HTML soumis depuis le site.
+Pour l&apos;utiliser, vous avez besoin d&apos;avoir un compte, soit sur Github soit sur Gitlab, soit sur Bitbucket. Si vous ne savez ce que c&apos;est, choisissez Github et allez vous informer ! Vous aurez besoin des bases pour profiter pleinement de Netlify.
+
+Créer un site sur Netlify est aussi simple que de faire un glisser-déposer.
+
+1. **Si ce n&apos;est pas déjà fait, créez un compte sur GitHub, GitLab ou Bitbucket.**
+2. **[Cliquez ici](https://app.netlify.com/signup) pour créer un compte Netlify en un clic (grâce au compte créé en étape 1).**
+
+![](./img/Netlify0.png)
+
+3. **Déployez un site sur Netlify**  
+Déployer un site sur Netlify est très simple, en fait, il suffit d&apos;un clic ! Underneath the hood, Netlify clone un repository github pour vous et l&apos;utilise comme source pour lancer le build du site web. Cette solution est très pratique sur le court terme.  
+
+## Bonus: Votre site en un clic
+## Liens rapides
+
+Netlify permet d&apos;automatiser ces étapes. J&apos;ai mis en place une liste de sites web préconfigurés avec chacun des générateurs de sites statiques mentionnés ci-dessus.
+
+En 1 clic de souris, un nouveau repository sera créé sur votre compte Github (ou Gitlab), contenant le générateur de site statique choisi, avec le thème choisi, le tout pré configuré pour Netlify.
+
+Vous n&apos;avez pas a faire ces étapes manuellement car c&apos;est moi qui les ait fais pour vous. En revanche, si aucun thème ne vous convient, vous devrez le faire manuellement. Servez-vous des étapes précédentes comme d&apos;un guide vous permettant de naviguer à travers les documentations spécialisées.  
+
+Quoi qu&apos;il en soit, vous devrez tôt ou tard faire un &quot;git pull&quot; pour récupérer le site localement à fin de le modifier et le mettre à jour.
+
+&lt;div class=&quot; y-scroll&quot;&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card__image &quot;&gt;
+        &lt;img src=&quot;./img/massively.png&quot; width=&quot;300&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card__name&quot;&gt;Jekyll theme &lt;/div&gt;
+      &lt;div style=&quot;color:#c80000;&quot;&gt;Jekyll&lt;/div&gt;
+      &lt;div class=&quot;card__description&quot;&gt;
+        Thème basic. Starter pour développeurs. Inclus Build time avec blablabla
+        &lt;br&gt;
+        &lt;a href=&quot;https://focused-hodgkin-2a8f29.netlify.com/&quot;&gt;Aperçu&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/iwiedenm/jekyll-theme-massively-src&quot;&gt;
+        &lt;div class=&quot;card__button clearfix&quot; style=&quot;background-color:#35b2bb;&quot;&gt; Deployer vers Netlify &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card__image &quot;&gt;
+        &lt;img src=&quot;./img/cactus-dark.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card__name&quot;&gt; Cactus Dark &lt;/div&gt;
+      &lt;div style=&quot;color:#0e83cd;&quot;&gt;Hexo&lt;/div&gt;
+      &lt;div class=&quot;card__description&quot;&gt;
+        Thème basic. Starter pour développeurs. Inclus Build time avec blablabla
+        &lt;br&gt;
+        &lt;a href=&quot;https://themes.gohugo.io/theme/hugo-nederburg-theme/&quot;&gt;Aperçu&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/probberechts/hexo-theme-cactus&quot;&gt;
+        &lt;div class=&quot;card__button clearfix&quot; style=&quot;background-color:#35b2bb;&quot;&gt; Deployer vers Netlify &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card__image &quot;&gt;
+        &lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/cc50938b91e4b29b7413484e9d7e4b63f02ea0ed/37169/hugo-nederburg-theme/screenshot-hugo-nederburg-theme_hu70fbe3b12efeab007a80c034bd81d91f_715776_750x500_fill_catmullrom_top_2.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card__name&quot;&gt;Gatsby theme name &lt;/div&gt;
+      &lt;div style=&quot;color:#663399;&quot;&gt;Gatsby&lt;/div&gt;
+      &lt;div class=&quot;card__description&quot;&gt;
+        Thème basic. Starter pour développeurs. Inclus Build time avec blablabla
+        &lt;br&gt;
+        &lt;a href=&quot;https://themes.gohugo.io/theme/hugo-nederburg-theme/&quot;&gt;Aperçu&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo&quot;&gt;
+        &lt;div class=&quot;card__button clearfix&quot; style=&quot;background-color:#35b2bb;&quot;&gt; Deployer vers Netlify &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card__image &quot;&gt;
+        &lt;img src=&quot;./img/hugo.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card__name&quot;&gt;Vex &lt;/div&gt;
+      &lt;div style=&quot;color:#ff4088;&quot;&gt;Hugo&lt;/div&gt;
+      &lt;div class=&quot;card__description&quot;&gt;
+        Thème basic. Starter pour développeurs. Inclus Build time avec blablabla
+        &lt;br&gt;
+        &lt;a href=&quot;&quot;&gt;
+          Aperçu
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/vex-hugo&quot;&gt;
+        &lt;div class=&quot;card__button clearfix&quot; style=&quot;background-color:#35b2bb;&quot;&gt;
+          Deployer vers Netlify
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;h2&gt;Bonus&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;Ghost&lt;/a&gt; - Générateur de sites statiques. Offre pro payante mais clés en main. avec certains thèmes magnifiques&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;SiteLeaf&lt;/a&gt; - Altenative payante à Netlify&lt;br&gt;
+&lt;a href=&quot;https://forestry.io/&quot;&gt;Forestry&lt;/a&gt; - Un CMS pour site statique, alternative payante a Netlify avec une offre gratuite jusqu’a 6 sites.&lt;br&gt;
+&lt;a href=&quot;https://gtmetrix.com/&quot;&gt;GTMetrix&lt;/a&gt; - Tester la performances de votre site web&lt;br&gt;
+&lt;a href=&quot;https://domainr.build/&quot;&gt;Domainr.build&lt;/a&gt; - Trouver des noms de domaines&lt;/p&gt;
+&lt;h5&gt;Autres hébergeurs pour vos sites statiques&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;https://commons.host&quot;&gt;https://commons.host&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://zeit.co/blog/now-static&quot;&gt;https://zeit.co/blog/now-static&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.bitballoon.com&quot;&gt;https://www.bitballoon.com&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://firebase.google.com/docs/hosting/&quot;&gt;https://firebase.google.com/docs/hosting/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://aws.amazon.com/s3/&quot;&gt;https://aws.amazon.com/s3/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.aerobatic.com/&quot;&gt;https://www.aerobatic.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;!-- **À lire ensuite :**  
+*Gagner de l’argent avec son blog  
+37 Banques d’images gratuites &amp; libres de droit  
+Comment créer un article parfait - En cours de rédaction  
+Comment monétiser son blog - En cours de rédaction  
+Comment mettre en place une newsletter - En cours de rédaction* --&gt;
+&lt;p&gt;N’hésitez pas à me contacter: thescriptor@protonmail.com&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gérer un projet avec la méthodologie en cascade]]></title><description><![CDATA[If you fail to plan, you are planning to fail
 —Benjamin Franklin Qu’est-ce qu’un projet ? Un projet et un effort limité dans le temps, ayant…]]></description><link>https://scriptor.io/gestion-de-projet/</link><guid isPermaLink="false">https://scriptor.io/gestion-de-projet/</guid><pubDate>Thu, 07 Jun 2018 23:46:37 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;If you fail to plan, you are planning to fail
 —Benjamin Franklin&lt;/p&gt;
@@ -25,7 +874,7 @@
 &lt;h2&gt;Execution&lt;/h2&gt;
 &lt;p&gt;Avant de livrer le site, il convient d’en faire une présentation au client afin d’assurer sa satisfaction. Il est ici question de lui montrer que le produit livré est un excellent produit, puisqu’un client satisfait est plus à même de refaire appel à nous et de nous recommander. La durée de cette dernière phase est variable, car elle dépend de ce qui aura été accordé dans le cahier des charges. Généralement, les agences essayent de vendre un contrat d’assurance et de maintenance du site. Si tel est le cas, on peut être amenés à retravailler régulièrement avec lui pendant toute la durée du contrat.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;La méthodologie en cascade est extrêmement efficace au moment de gérer des projets prévisibles, tels que des sites vitrine. Toutefois, tous les projets ne sont pas prévisibles. C’est la raison pour laquelle les méthodes agiles ont été inventées. Parmi elles, celle qui se démarque par son adoption spectaculaire est la méthode SCRUM. Elle permet de gérer un projet en cycles courts, aboutissant sur un livrable ou un résultat concret, par exemple le développement d’une fonctionnalité. Beaucoup d’autres méthodologie existent, bien trop pour être toutes mentionnées dans cet essai. En fin de compte, on choisira une méthodologie en fonction des préférences de l’équipe, la fiabilité du client et la nature du projet.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[37 Banques d'Images Gratuites et Libres de Droits]]></title><description><![CDATA[Vous voulez avoir à un seul endroit les meilleures banques d’images pour vos images gratuites, sans risquer de poursuites ?  Alors vous…]]></description><link>https://scriptor.io/images-gratuites/</link><guid isPermaLink="false">https://scriptor.io/images-gratuites/</guid><pubDate>Wed, 30 May 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/Images-gratuites-et-libres-de-droit_-798b7f4ed32065a5fd89b970f28dd490.svg&quot; alt=&quot;Images gratuites et libres de droits&quot;&gt;&lt;/p&gt;
+&lt;p&gt;La méthodologie en cascade est extrêmement efficace au moment de gérer des projets prévisibles, tels que des sites vitrine. Toutefois, tous les projets ne sont pas prévisibles. C’est la raison pour laquelle les méthodes agiles ont été inventées. Parmi elles, celle qui se démarque par son adoption spectaculaire est la méthode SCRUM. Elle permet de gérer un projet en cycles courts, aboutissant sur un livrable ou un résultat concret, par exemple le développement d’une fonctionnalité. Beaucoup d’autres méthodologie existent, bien trop pour être toutes mentionnées dans cet essai. En fin de compte, on choisira une méthodologie en fonction des préférences de l’équipe, la fiabilité du client et la nature du projet.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[37 Banques d'Images Gratuites et Libres de Droits]]></title><description><![CDATA[Vous voulez avoir à un seul endroit les meilleures banques d’images pour vos images gratuites, sans risquer de poursuites ?  Alors vous…]]></description><link>https://scriptor.io/images-gratuites/</link><guid isPermaLink="false">https://scriptor.io/images-gratuites/</guid><pubDate>Wed, 30 May 2018 23:46:37 GMT</pubDate><content:encoded>&lt;img src=&quot;/Images-gratuites-et-libres-de-droit-f3d378e50a22cc5933171a3ee4454c83.svg&quot; alt=&quot;Images gratuites et libres de droits&quot; class=&quot;bradius&quot;&gt;
 &lt;p&gt;Vous voulez avoir à un seul endroit les meilleures banques d’images pour vos images gratuites, sans risquer de poursuites ? &lt;/p&gt;
 &lt;p&gt;Alors vous allez adorer cet article.&lt;/p&gt;
 &lt;p&gt;J’ai listé les 37 meilleures banques d’images gratuites et libres de droits ainsi que des moteurs de recherche pour trouver vos images vectorielles, Illustrations et motifs.&lt;/p&gt;
